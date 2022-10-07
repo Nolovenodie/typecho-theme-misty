@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body style="margin: 0; padding: 0;height: 100%; width: 100%;">
+		<canvas style="width: 100%; background-color: #000000;height: 100%; position:absolute;z-index:-2;" id="static" ></canvas>
+		<div style="width: 100%; height: 100%; display: flex; justify-content: center;align-items: center;flex-wrap: wrap;">
+			<div style="font-size: 200px;width: 100%; display: flex;justify-content: center;margin-top: 100px; font-weight: bold;">SOS</div>
+			<div style="font-size: 50px; margin-top: 50px; font-weight: bold;">没什么好扒的～～</div>
+		</div>
+	
+		<script type="text/javascript">
+			const canvas = document.getElementById("static");
+			if (canvas) {
+				const context = canvas.getContext("2d");
+				const {
+					offsetHeight,
+					offsetWidth
+				} = canvas;
+				canvas.width = offsetWidth;
+				canvas.height = offsetHeight;
+				const pixelSize = 1;
+
+				const idata = context.createImageData(offsetWidth, offsetHeight);
+				const buffer = new Uint32Array(idata.data.buffer);
+
+				function noise(context) {
+					let len = buffer.length - 1;
+					while (len--) {
+						buffer[len] = Math.random() < 0.5 ? 0 : -1 >> 0;
+					};
+					context.putImageData(idata, 0, 0);
+					
+				};
+
+				// This method will generate static at the fastest possible render speed
+				(function loop() {
+					noise(context);
+					requestAnimationFrame(loop);
+				})();
+
+				//This method will generate static at a fixed interval
+				setInterval(() => noise(context), 24); // in milliseconds
+			};
+		</script>
+
+	</body>
+</html>
