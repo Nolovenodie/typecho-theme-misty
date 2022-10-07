@@ -52,15 +52,13 @@
 </head>
 <body id="body" class="">
 <header>
-	<a href="<?php $this->options->siteUrl(); ?>">
-		<img class="avatar" src="<?php echo rtrim($this->options->siteUrl, "/") ?>/logo.jpg">
-	</a>
+    <?php if ($this->options->blogLogo):?>
+        <a href="<?php $this->options->siteUrl(); ?>">
+            <img class="avatar" src="<?php $this->options->blogLogo(); ?>">
+        </a>
+    <?php endif;?>
     <a class="logo" href="<?php $this->options->siteUrl(); ?>">
-        <?php if ($this->options->blogLogo):?>
-            <img src="<?php $this->options->blogLogo(); ?>">
-        <?php else:?>
-            KANE BLOG
-        <?php endif;?>
+        <?php $this->options->title() ?>x
     </a>
     <div class="menu">
         <div  id="menu-list" class="menu-list">
