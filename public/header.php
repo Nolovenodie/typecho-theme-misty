@@ -99,6 +99,11 @@
                 }
                 ?>
             <?php endif; ?>
+            <li>
+            <?php if($this->options->plugin("ExSearch")):?>
+                    <a href="javascript:void(0)" class="search-form-input">搜索</a>
+            <?php endif; ?>
+            </li>
         </div>
     </div>
 </header>
