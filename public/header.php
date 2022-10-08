@@ -58,7 +58,7 @@
         </a>
     <?php endif;?>
     <a class="logo" href="<?php $this->options->siteUrl(); ?>">
-        <?php $this->options->title() ?>x
+        <?php $this->options->title() ?>
     </a>
     <div class="menu">
         <div  id="menu-list" class="menu-list">
