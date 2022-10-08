@@ -1248,11 +1248,12 @@ body {
     text-align: center; }
     body .footer-container * {
       font-size: 12px;
-      /* line-height: 16px; */ }
+      line-height: 16px; }
     body .footer-container p {
       width: 100%;
       margin: 0; }
     body .footer-container a {
+      word-wrap: break-word;
       color: rgba(0, 0, 0, 0.98);
       transition: 0.3s color;
       margin: 0; }
