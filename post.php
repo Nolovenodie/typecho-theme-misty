@@ -218,7 +218,7 @@
         var n = children.length;
         debugger;
         if (n==1){
-            obj.style.color = '#cc493d';
+            obj.style.color = '#006CFF';
             $(obj).after('<div class="social-pop"><img src="'+url+'"></div>');
         }else {
             obj.style.color = 'black';

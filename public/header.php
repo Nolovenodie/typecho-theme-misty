@@ -156,7 +156,7 @@
 
     function showMenuList(obj){
         if ($("#menu-more").hasClass("hide")){
-            obj.style.color = "#cc493d";
+            obj.style.color = "#006CFF";
             $("#menu-more").removeClass("hide")
         }else {
             obj.style.color = "black";
