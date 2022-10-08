@@ -596,7 +596,7 @@ body {
         body .post-container .content-container .post-meta a {
           margin-left: 16px;
           transition: .3s;
-          font-size: 14px; }
+          font-size: 12px; }
           body .post-container .content-container .post-meta a:hover {
           color: #006CFF; }
       body .post-container .content-container .tags-container {
