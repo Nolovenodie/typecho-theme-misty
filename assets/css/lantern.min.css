@@ -236,18 +236,10 @@ body {
       position: relative;
       /* width: 990px; */
       margin: 0px auto;
+      width: 100%;
       height: auto; }
-      @media (max-width: 1440px) {
-        body .article-container .article-list {
-          /* width: 990px; */ } }
-      @media (max-width: 1020px) {
-        body .article-container .article-list {
-          width: 680px; } }
-      @media (max-width: 680px) {
-        body .article-container .article-list {
-          width: 100%; } }
       body .article-container .article-list .article-single {
-        width: 760px;
+        /* width: 760px; */
         margin: 0px auto;
         /* border-bottom: 1px solid #ebebeb; */
         text-align: center; }
@@ -1249,6 +1241,7 @@ body {
       font-size: 12px;
       line-height: 16px; }
     body .footer-container p {
+      min-width: 200px;
       margin: 0; }
     body .footer-container a {
       color: rgba(0, 0, 0, 0.98);
