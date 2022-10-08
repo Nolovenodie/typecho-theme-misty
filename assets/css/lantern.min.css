@@ -434,11 +434,14 @@ body {
       align-items: center; }
       body .loadmore a:hover {
         box-shadow: inset 0 -0.8em 0 #006CFF; }
+  body .post-content {
+    padding: 0 0 24px; }
   body .post-content a {
     text-decoration: underline; }
   body .post-content p {
     font-size: 18px;
-    line-height: 1.9em; }
+    line-height: 1.8em;
+    margin-bottom: 1.12em; }
     body .post-content p code {
       padding: 4px 6px;
       margin: 0 2px;
@@ -447,6 +450,11 @@ body {
     body .post-content p strong {
       font-size: 17px;
       font-weight: bolder; }
+  body .post-content h2 {
+    font-size: 1.42em;
+    margin: 16px 0;
+    font-weight: 700;
+    padding-top: 16px; }
   body .post-content img {
     display: block;
     margin: 30px auto;
@@ -606,7 +614,7 @@ body {
       body .post-container .content-container .recommend-container {
         display: flex;
         justify-content: space-between;
-        padding: 10px 0; }
+        padding: 24px 0; }
         body .post-container .content-container .recommend-container .iconfont {
           font-size: 17px; }
         body .post-container .content-container .recommend-container a:hover {
