@@ -622,9 +622,11 @@ body {
         justify-content: space-between;
         padding: 24px 0; }
         body .post-container .content-container .recommend-container .iconfont {
+	  transition: .3s;
+	  font-family: 'Noto Serif SC', serif, 'iconfont' !important;
           font-size: 17px; }
         body .post-container .content-container .recommend-container a:hover {
-          color: #999; }
+          color: #5e5e5e; }
       body .post-container .content-container .article-writer {
         display: flex;
         align-items: center;
