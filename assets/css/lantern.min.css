@@ -24,7 +24,7 @@
   display: none;
 }
 
-body, div, a, p, ul, li, ol, h1, h2, h3, h4, h5, h6, table, tr, td {
+body, div, a, p, li, ol, h1, h2, h3, h4, h5, h6, table, tr, td {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -40,13 +40,13 @@ body {
     color: #000;
     cursor: pointer; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
-    font-weight: 500; }
+    font-weight: bold; }
   body h1 {
     font-size: 30px; }
   body h2 {
     font-size: 26px; }
   body h3 {
-    font-size: 22px; }
+    font-size: 24px; }
   body h4 {
     font-size: 20px; }
   body h5 {
@@ -450,11 +450,16 @@ body {
     body .post-content p strong {
       font-size: 17px;
       font-weight: bolder; }
+  body .post-content h1 {
+    margin: 16px 0;
+    padding-top: 16px; }
   body .post-content h2 {
     font-size: 1.42em;
     margin: 16px 0;
-    font-weight: 700;
     padding-top: 16px; }
+  body .post-content h3{
+    margin: 12px 0;
+    padding-top: 12px; }
   body .post-content img {
     display: block;
     margin: 30px auto;
@@ -465,8 +470,9 @@ body {
     cursor: pointer; }
   body .post-content blockquote {
     border-left: 4px solid;
-    padding: 10px 20px;
-    margin: 20px 0; }
+    padding: 4px 20px;
+    margin: 20px 0;
+    }
   body .post-content ul li {
     margin: 8px 0; }
   body .post-content table {
